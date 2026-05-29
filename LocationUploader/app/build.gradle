@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.locationuploader'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.locationuploader"
+        minSdk 21
+        targetSdk 34
+        versionCode 21
+        versionName "1.0.21"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true  // 启用代码混淆和优化
+            shrinkResources true  // 启用资源压缩
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 使用默认debug签名，确保可以安装
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            // 使用默认debug签名
+            signingConfig signingConfigs.debug
+        }
+    }
+    
+    // 添加universal APK支持
+    splits {
+        abi {
+            enable false
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    
+    // 解决Kotlin依赖冲突
+    packagingOptions {
+        exclude 'META-INF/*.kotlin_module'
+        pickFirst 'META-INF/DEPENDENCIES'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/LICENSE.txt'
+        pickFirst 'META-INF/license.txt'
+        pickFirst 'META-INF/NOTICE'
+        pickFirst 'META-INF/NOTICE.txt'
+        pickFirst 'META-INF/notice.txt'
+        pickFirst 'META-INF/ASL2.0'
+        pickFirst 'META-INF/*.version'
+    }
+    
+    // 强制使用特定版本的Kotlin
+    configurations.all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

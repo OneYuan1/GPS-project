@@ -1,0 +1,97 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- GPS定位标记 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30C42.4,30 33,39.4 33,51C33,62.6 54,78 54,78C54,78 75,62.6 75,51C75,39.4 65.6,30 54,30ZM54,56C49.6,56 46,52.4 46,48C46,43.6 49.6,40 54,40C58.4,40 62,43.6 62,48C62,52.4 58.4,56 54,56Z" />
+    
+    <!-- 数据上传箭头 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,60L48,54L50.8,51.2L52,52.4V66H56V52.4L57.2,51.2L60,54L54,60Z" />
+    
+    <!-- 信号波纹效果 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.6"
+        android:pathData="M54,54m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.4"
+        android:pathData="M54,54m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.2"
+        android:pathData="M54,54m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" />
+    
+    <!-- 卫星信号点 -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M30,25m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M78,25m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M30,71m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M78,71m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <!-- 连接线 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M32,25L48,48" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M76,25L60,48" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M32,71L48,48" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M76,71L60,48" />
+    
+    <!-- 数据流效果 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,65L52,63L53,62V68H55V62L56,63L54,65Z" />
+    
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,70L52,68L53,67V73H55V67L56,68L54,70Z" />
+    
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,75L52,73L53,72V78H55V72L56,73L54,75Z" />
+</vector>

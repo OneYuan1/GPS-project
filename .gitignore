@@ -1,0 +1,49 @@
+# ========== 通用 ==========
+# IDE 配置（全局）
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+
+# ========== Android 项目 (LocationUploader) ==========
+# 保持原 LocationUploader/.gitignore 的核心规则，但这里用路径限定
+LocationUploader/.gradle/
+LocationUploader/build/
+LocationUploader/captures/
+LocationUploader/.externalNativeBuild/
+LocationUploader/.cxx/
+LocationUploader/local.properties
+LocationUploader/*.iml
+
+# Android 编译输出
+*.apk
+*.aab
+LocationUploader/releases/
+LocationUploader/分享包/
+
+# ========== Python 项目 (Tcp) ==========
+Tcp/__pycache__/
+Tcp/.idea/
+Tcp/*.log
+Tcp/*.pyc
+Tcp/.pytest_cache/
+
+# ========== 根目录其他 ==========
+# 如果根目录有临时文件
+*.exe
+*.msi
+*.zip
+*.7z

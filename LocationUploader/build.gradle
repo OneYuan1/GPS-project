@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.12.0'
+    }
+}
+ext {
+    myValue = 'my-release-key.jks'
+    myValue = myValue
+}
+
+allprojects {
+    repositories {
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

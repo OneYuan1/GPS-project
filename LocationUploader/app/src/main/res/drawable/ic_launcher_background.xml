@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 渐变背景 -->
+    <defs>
+        <linearGradient
+            android:startX="0"
+            android:startY="0"
+            android:endX="108"
+            android:endY="108"
+            android:type="linear">
+            <item android:offset="0" android:color="#2196F3" />
+            <item android:offset="0.5" android:color="#3F51B5" />
+            <item android:offset="1" android:color="#673AB7" />
+        </linearGradient>
+    </defs>
+    
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M0,0h108v108h-108z" />
+    
+    <!-- 渐变圆形背景 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,54m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" />
+    
+    <!-- 装饰性网格点 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M20,20m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M88,20m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M20,88m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M88,88m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    
+    <!-- 中心装饰圆环 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.2"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+    
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.1"
+        android:pathData="M54,54m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" />
+</vector>
